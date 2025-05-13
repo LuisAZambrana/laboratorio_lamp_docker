@@ -9,10 +9,10 @@
         <div class="container-fluid">
             <?php
                 echo "<h1>¡Laboratorio con Lamp!</h1>";
-		echo "<h2>...a continuación consulta a la base para que veas la conexion </h2>
+		echo "<h2>...a continuación consulta a la base para que veas la conexion </h2>";
 
                 $conn = mysqli_connect('db', 'root', 'test');   
-                $database = mysqli_select_db($conn, 'baseejemplo');  
+                $database = mysqli_select_db($conn, 'dbname');  
             
                 $query = 'SELECT * From Personas';
                 $result = mysqli_query($conn, $query);
